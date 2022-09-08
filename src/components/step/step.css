@@ -1,0 +1,22 @@
+.main_body {
+  font-family: Poppins;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+}
+
+.input_submit {
+  background-color: #65733f;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.tips_box {
+  background: #eaeae9;
+  text-align: center;
+  padding: 15px;
+}
