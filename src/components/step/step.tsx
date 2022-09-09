@@ -3,7 +3,7 @@ import YoutubeEmbed from "../YoutubeEmbed/YoutubeEmbed";
 import "./step.css";
 
 interface props {
-  todo: string;
+  myString: string;
   //   setTodo: React.Dispatch<React.SetStateAction<string>>;
   //   handleAdd: (e: React.FormEvent) => void;
 }
@@ -12,7 +12,7 @@ function handleComplete() {
   console.log("complete clicked!");
 }
 
-const Step: React.FC<props> = ({ todo }) => {
+const Step: React.FC<props> = ({ myString }) => {
   const inputRef = useRef<HTMLInputElement>(null);
 
   return (

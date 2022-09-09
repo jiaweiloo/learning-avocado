@@ -5,7 +5,7 @@ import Step from './components/step/step';
 function App() {
   return (
     <div className="App">
-     <Step todo=""></Step>
+     <Step myString=""></Step>
     </div>
   );
 }
