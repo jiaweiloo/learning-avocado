@@ -24,7 +24,7 @@ const Step: React.FC<props> = ({ myString }) => {
       <div>
         <span className="tips_box">
           Complete a 'One Complete Cycle of Breath' practice before a meeting or
-          spending time with someone today.
+          spending time with someone today. Test
         </span>
       </div>
       <div>
