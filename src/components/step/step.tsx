@@ -9,7 +9,7 @@ interface props {
 }
 
 function handleComplete() {
-  console.log("complete clicked");
+  console.log("complete clicked!");
 }
 
 const Step: React.FC<props> = ({ todo }) => {
