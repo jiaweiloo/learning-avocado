@@ -13,10 +13,22 @@ const Sidebar: React.FC<props> = ({ exercises, setActiveStep, activeLvl }) => {
   const inputRef = useRef<HTMLInputElement>(null);
 
   return (
-    <div style={{ minWidth: "220px", maxWidth: "220px", minHeight: "100vh", maxHeight: "100vh" }}>
+    <div
+      style={{
+        minWidth: "220px",
+        maxWidth: "220px",
+        minHeight: "100vh",
+        maxHeight: "100vh",
+      }}
+    >
       <div style={{ padding: "15px" }}>
         <span className="subTitle">
           The {exercises.length}-Day Mindfullness Challenge{" "}
+        </span>
+      </div>
+      <div style={{ padding: "15px" }}>
+        <span className="">
+          Progress: {((activeLvl + 1) / exercises.length) * 100} %{" "}
         </span>
       </div>
 

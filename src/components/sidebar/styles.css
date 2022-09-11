@@ -5,4 +5,6 @@
 
 .subItem {
   cursor: pointer;
+  padding: 15px;
+  font-family: Poppins;
 }

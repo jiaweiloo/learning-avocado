@@ -1,16 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Sidebar from "./components/sidebar/sidebar";
 import Step from "./components/step/step";
 import { Exercise } from "./types/general";
+import { useLocalStorage } from "./utils/general-utils";
 
 function App() {
   var exercises: Exercise[] = [
     {
       id: 0,
       title: "Day 1: One Complete Cycle of Breath",
-      videoEmbedId: "FJDVKeh7RJI",
-      extraNotes: "test nmotes",
+      videoEmbedId: "IUOVQZK2D8k",
+      extraNotes:
+        "Let's begin by taking a moment just to settle your body in a comfortable position. " +
+        "It can be standing, sitting, or lying down, just inviting a sense of ease and relaxation in the body, " +
+        "feeling comfortable, with the intention to bring awareness and alertness to the physical sensations of your body.",
     },
     {
       id: 1,
@@ -34,15 +38,25 @@ function App() {
   ];
 
   const [activeExercise, setActiveExe] = useState(exercises[0]);
-  const [activeLvl, setActiveLvl] = useState(0);
+  const [activeLvl, setActiveLvl] = useLocalStorage("activeLvl", 0);
+
+  useEffect(() => {
+    const activeLvl = JSON.parse(localStorage.getItem("activeLvl") || "0");
+    if (activeLvl) {
+      setActiveStep(activeLvl);
+      console.log("activeLvl: " + activeLvl);
+    }
+  }, []);
 
   const setActiveStep = (level: number) => {
     if (level >= exercises.length) {
-      console.log("cancel")
+      console.log("activeStep not changing");
       return;
     }
     setActiveLvl(level);
     setActiveExe(exercises[level]);
+
+    console.log("localStorage: " + activeLvl);
   };
 
   return (
