@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/learning-avocado/static/css/main.7a879a82.css",
+    "main.js": "/learning-avocado/static/js/main.a6992ad3.js",
+    "index.html": "/learning-avocado/index.html",
+    "main.7a879a82.css.map": "/learning-avocado/static/css/main.7a879a82.css.map",
+    "main.a6992ad3.js.map": "/learning-avocado/static/js/main.a6992ad3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a879a82.css",
+    "static/js/main.a6992ad3.js"
+  ]
+}
