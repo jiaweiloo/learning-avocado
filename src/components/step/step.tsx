@@ -1,31 +1,37 @@
 import React, { useRef } from "react";
+import { Exercise } from "../../types/general";
 import YoutubeEmbed from "../YoutubeEmbed/YoutubeEmbed";
 import "./step.css";
 
 interface props {
-  myString: string;
+  activeExercise: Exercise;
   //   setTodo: React.Dispatch<React.SetStateAction<string>>;
-  //   handleAdd: (e: React.FormEvent) => void;
+  setActiveStep: any;
+  activeLvl: number;
 }
 
-function handleComplete() {
-  console.log("complete clicked!");
-}
-
-const Step: React.FC<props> = ({ myString }) => {
+const Step: React.FC<props> = ({
+  activeExercise,
+  setActiveStep,
+  activeLvl,
+}) => {
   const inputRef = useRef<HTMLInputElement>(null);
+
+  const handleComplete = () => {
+    setActiveStep(activeLvl + 1);
+  };
 
   return (
     <div className="main_body">
-      Day 1: TEST
+      <div>{activeExercise.title}</div>
       <div>
-        <YoutubeEmbed embedId="9P6rdqiybaw"></YoutubeEmbed>
+        <YoutubeEmbed embedId={activeExercise.videoEmbedId}></YoutubeEmbed>
       </div>
       <div>
-        <span className="tips_box">
-          Complete a 'One Complete Cycle of Breath' practice before a meeting or
-          spending time with someone today. Test 2
-        </span>
+        <div className="tips_box">
+          Summary: <br />
+          {activeExercise.extraNotes}
+        </div>
       </div>
       <div>
         <button className="input_submit" onClick={handleComplete}>
