@@ -29,8 +29,15 @@ const Step: React.FC<props> = ({
       </div>
       <div>
         <div className="tips_box">
-          Summary: <br />
+          <span className="green_title">Summary:</span> <br />
           {activeExercise.extraNotes}
+        </div>
+      </div>
+      <div>
+        <div className="tips_box">
+          <span className="green_title">Reflection Questions:</span>
+          <br />
+          {activeExercise.reflectionQues}
         </div>
       </div>
       <div>
@@ -38,6 +45,7 @@ const Step: React.FC<props> = ({
           Mark lesson complete
         </button>
       </div>
+      <br />
     </div>
   );
 };

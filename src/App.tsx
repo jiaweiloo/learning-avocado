@@ -15,6 +15,7 @@ function App() {
         "Let's begin by taking a moment just to settle your body in a comfortable position. " +
         "It can be standing, sitting, or lying down, just inviting a sense of ease and relaxation in the body, " +
         "feeling comfortable, with the intention to bring awareness and alertness to the physical sensations of your body.",
+      reflectionQues: "",
     },
     {
       id: 1,
@@ -22,18 +23,21 @@ function App() {
       videoEmbedId: "5FR-iZNWbiU",
       extraNotes:
         " I designed a sturdy connection for furniture. Designed in rhino 3d with grasshopper plugin. Printed in Carbon fiber and PLA.",
+      reflectionQues: "",
     },
     {
       id: 2,
       title: "Day 3: Finance",
       videoEmbedId: "8xzINLykprA",
       extraNotes: "How complex our financial systems are?",
+      reflectionQues: "",
     },
     {
       id: 3,
       title: "Day 4: Day 4",
       videoEmbedId: "B9XGUpQZY38",
       extraNotes: "How does the economy really work?",
+      reflectionQues: "",
     },
   ];
 

@@ -5,6 +5,8 @@
   gap: 30px;
   text-align: center;
   padding-top: 20px;
+
+  padding-left: 220px;
   width: 100%;
 }
 
@@ -21,4 +23,13 @@
   background: #eaeae9;
   text-align: center;
   padding: 15px;
+  margin: 0 15%;
+  border-radius: 12px;
+}
+
+.green_title {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 21px;
+  color: #667440;
 }
