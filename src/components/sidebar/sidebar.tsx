@@ -14,7 +14,7 @@ const Sidebar: React.FC<props> = ({ exercises, setActiveStep, activeLvl }) => {
 
   return (
     <div
-    className="sidebar"
+      className="sidebar"
       style={{
         minWidth: "220px",
         maxWidth: "220px",
