@@ -34,7 +34,11 @@ const Sidebar: React.FC<props> = ({ exercises, setActiveStep, activeLvl }) => {
 
       <div style={{ padding: "15px" }}>
         {exercises.map((exercise) => (
-          <SidebarItem exercise={exercise} setActiveStep={setActiveStep} />
+          <SidebarItem
+            key={exercise.id}
+            exercise={exercise}
+            setActiveStep={setActiveStep}
+          />
         ))}
       </div>
     </div>
