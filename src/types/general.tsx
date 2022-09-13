@@ -3,4 +3,5 @@ export type Exercise = {
   title: string;
   videoEmbedId: string;
   extraNotes: string;
+  reflectionQues: string;
 };
