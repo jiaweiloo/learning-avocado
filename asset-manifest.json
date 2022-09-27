@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/learning-avocado/static/css/main.e36f5c6b.css",
-    "main.js": "/learning-avocado/static/js/main.b8224fe0.js",
+    "main.css": "/learning-avocado/static/css/main.f3996173.css",
+    "main.js": "/learning-avocado/static/js/main.d68a74e1.js",
     "index.html": "/learning-avocado/index.html",
-    "main.e36f5c6b.css.map": "/learning-avocado/static/css/main.e36f5c6b.css.map",
-    "main.b8224fe0.js.map": "/learning-avocado/static/js/main.b8224fe0.js.map"
+    "main.f3996173.css.map": "/learning-avocado/static/css/main.f3996173.css.map",
+    "main.d68a74e1.js.map": "/learning-avocado/static/js/main.d68a74e1.js.map"
   },
   "entrypoints": [
-    "static/css/main.e36f5c6b.css",
-    "static/js/main.b8224fe0.js"
+    "static/css/main.f3996173.css",
+    "static/js/main.d68a74e1.js"
   ]
 }
